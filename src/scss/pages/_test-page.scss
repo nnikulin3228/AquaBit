@@ -1,0 +1,144 @@
+
+.sect-first {
+  width: 860px;
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  h1 {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  h2 {
+    width: 100%;
+    margin-top: 100px;
+    font-size: 25px;
+    color: black;
+    // margin-bottom: 50px;
+    padding-left: 50px;
+  }
+  p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .pf{
+    margin-left: 110px;
+  }
+
+  .discription {
+    color: #1E1A55;
+    margin-left: 110px;
+  }
+  .table1 {
+    width: 100%;
+  }
+
+  .ah {
+    margin-top: 0px;
+    margin-left: 110px;
+    font-size: 35px;  
+    color: #1E1A55;
+  }
+
+
+  .oglavl_h {
+    margin: 0px;
+    padding-left: 50px; 
+  }
+    ul.oglavl {
+      color: black;
+      width: 100%;
+      font-size: 24px;
+      padding: 0;
+      margin: 0;
+      list-style-type: none; 
+      }
+      
+  ul.oglavl li {
+    font-size: 24px;
+      border-bottom: 1px dotted #C2C2C2; /* Необязателен. Здесь задается толщина, тип и цвет точек */
+      position: relative;
+      padding: 0;
+      margin-left: 70px;
+      margin-bottom:5px; /* Необязателен. Задается для установки расстояния между блоками li */
+      }
+      
+  ul.oglavl li span {
+      background-color: #FFF; /* Это необходимо, чтобы перекрыть точки фоном */
+      margin: 0;
+      }
+  
+  ul.oglavl li span.text, ul.oglavl li span.page {
+      bottom: -5px; /* Смещаем значимые блоки, чтобы они перекрыли точки */
+      }
+  
+  ul.oglavl span.text {
+      position :relative;
+      margin-right:7em; /* Задается чтобы текст не заходил на номера страниц */
+      padding-right:2px; /* Необязателен. Задается чтобы точки не подходили вплотную к концу текста */
+      }
+      
+  ul.oglavl span.page {
+      position: absolute;
+      right: 0;
+      padding-left:2px; /* Необязателен. Задается чтобы точки не подходили вплотную к номерам страниц */
+      }
+}
+.oglavl_h2 {
+  margin-left: 50px!important; 
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin1{
+  margin-top: 40px;
+}
+
+.ssilka{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  margin: 30px 0px;
+}
+
+.download1{
+  width: 50px;
+  height: 50px;
+}
+
+.link1{
+  margin: 0px!important;
+  width: auto!important;
+  
+  &:hover {
+    color: rgb(50, 43, 148);
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .sect-first {
+    width: 90%;
+  }
+  h1 {
+    font-size: 8vw!important;
+  }
+  h2 {
+    font-size: 4vw!important;
+    margin-left: 0px!important;
+  }
+}
